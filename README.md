@@ -1,6 +1,26 @@
 # Indeed Machine Learning CodeSprint
 Code for [HackerRank Indeed Machine Learning CodeSprint](https://www.hackerrank.com/contests/indeed-ml-codesprint-2017/challenges/tagging-raw-job-descriptions) on Tagging Raw Job Descriptors.
 
+## Dependencies
+
+The code was completely written in [Python 2.7](https://www.python.org/), with the following dependencies:
+
+- [IPython](https://ipython.org/): Used to write [IPython Notebooks](https://ipython.org/ipython-doc/3/notebook/), where the model was implemented.
+- [Numpy](http://www.numpy.org/): Python package for numerical computation.
+- [scikit-learn](http://scikit-learn.org/): Python package with Machine Learning algorithms.
+
+## Execution
+
+The code is executed via an IPython Notebook by executing the following steps:
+
+1) Install all dependencies.
+2) Run the `indeed.ipynb` with the command `$ ipython notebook indeed.ipynb` at the command line. This will open a browser.
+3)
+3) Place `train.tsv` (containing training data) `test.tsv` (that will be the input descriptions) file a directory called `data/` with respect to where the notebook is located at. For instance, if the notebook is at `/home/user/indeed.ipynb`, the files must be at the paths `/home/user/data/train.tsv` and `/home/user/data/test.tsv`.
+4) Return to the browser and open the IPython Notebook tab. In the top menu, select `Cell` and click on `Run All`. This will execute all steps in the notebook.
+5) The notebook will generate a `tags.tsv` file at the `data/` directory, e.g., `/home/user/data/tags.tsv` with the output for the given `test.tsv` file.
+
+
 ## Summary
 
 [Indeed.com](https://www.indeed.jobs/career) is an website for matching job seekers and open positions. In this contest, the goal is to automatically generate tags for given a job description, among the following 12:
